@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_layout"
+    android:layout_width="match_parent"
+    android:layout_height="42dp"
+    android:background="@color/app_blue_color"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="12dp"
+        android:src="@drawable/bt_back_selector"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/id_friend_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="与xxx的聊天"
+        android:textColor="@color/white_color"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="12dp"
+        android:visibility="gone" />
+
+</LinearLayout>

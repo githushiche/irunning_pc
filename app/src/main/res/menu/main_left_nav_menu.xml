@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/id_main_left_selfinfo"
+            android:icon="@mipmap/icon_left_hobby"
+            android:title="个人信息" />
+        <item
+            android:id="@+id/id_main_my_love"
+            android:icon="@mipmap/icon_left_hobby"
+            android:title="我的爱好" />
+        <item
+            android:id="@+id/id_main_left_keephealth"
+            android:icon="@mipmap/icon_left_hobby"
+            android:title="运动健康" />
+        <item
+            android:id="@+id/id_main_left_healthydiet"
+            android:icon="@mipmap/icon_left_hobby"
+            android:title="饮食健康" />
+    </group>
+</menu>

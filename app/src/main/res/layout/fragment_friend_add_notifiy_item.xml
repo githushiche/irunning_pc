@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_notify"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="5dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/id_notifiy_picture"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:src="@mipmap/step" />
+
+        <LinearLayout
+            android:id="@+id/msg_detail"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/id_notifiy_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="@string/app_name"
+                android:textColor="@color/app_black_color" />
+
+            <TextView
+                android:id="@+id/id_notifiy_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:maxLines="1"
+                android:text="@string/add_do_agree"
+                android:textColor="@color/default_text_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/tv_btn_round_green"
+                android:gravity="center"
+                android:text="@string/add_have_agree"
+                android:textColor="@color/red" />
+
+            <TextView
+                android:id="@+id/id_add_fri_agree"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/tv_btn_round_green"
+                android:gravity="center"
+                android:text="@string/add_do_agree"
+                android:textColor="@color/app_green_color" />
+
+            <TextView
+                android:id="@+id/tv_do_refuse"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/tv_btn_round_red"
+                android:gravity="center"
+                android:text="@string/add_do_refuse"
+                android:textColor="@color/app_red_color" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_below="@+id/layout_notify"
+        android:layout_marginTop="5dp"
+        android:background="@color/interval_color" />
+
+</RelativeLayout>

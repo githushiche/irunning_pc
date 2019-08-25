@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">趣动</string>
+    <!-- 前面边是应用在那一个界面;welcome -->
+    <string name="welcome_tv_string">生命不息 奔跑不止!</string>
+    <string name="app_version">V1.3</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="login_tv_string">登陆</string>
+    <string name="register_btn_string">注册</string>
+    <string name="have_account_string">已有账号！直接登陆!</string>
+    <string name="register_tv_string">没有账号?立即注册</string>
+    <string name="query_et_string">搜索</string>
+    <string name="message_bt_string">消息</string>
+    <string name="friend_bt_string">朋友</string>
+    <string name="add_friend_tv_string">添加朋友</string>
+    <string name="add_friend_verification_tv_string">好友验证</string>
+    <string name="app_change_user">注销用户</string>
+    <string name="app_exit_user">退出</string>
+    <!-- start 个人信息 -->
+    <string name="account_head_picture">头像</string>
+    <string name="account_nick">昵称</string>
+    <string name="account_account">跑跑号</string>
+    <string name="account_sex">性别</string>
+    <string name="account_height">身高</string>
+    <string name="account_weight">体重</string>
+    <string name="account_birth">年龄</string>
+    <string name="account_phone">电话</string>
+    <string name="account_email">邮箱</string>
+    <string name="account_location">地区</string>
+    <string name="account_signature">签名</string>
+    <string name="signature_hint">这个人很懒，什么都没留下~</string>
+    <!-- end 个人信息 -->
+    <!-- start 添加好友 -->
+    <string name="account_add_nick">昵称：</string>
+    <string name="account_tip">帐号：</string>
+    <string name="video_chat">视频聊天</string>
+    <string name="set_remark_info">设置备注信息</string>
+    <string name="add_to_contract">添加到通讯录</string>
+    <string name="add_do_agree">同意</string>
+    <string name="add_do_refuse">拒绝</string>
+    <string name="add_have_agree">已同意</string>
+    <string name="please_input_account">请输入要添加的人的pp号或者昵称</string>
+    <string name="request_friend_hint">请输入添加好友的附件</string>
+    <string name="send_request">发送好友请求</string>
+    <!-- end 添加好友 -->
+    <!-- start 聊天界面 -->
+    <string name="message_send_btn">发送</string>
+    <string name="message_send_image">图片</string>
+    <string name="message_send_camera">相机</string>
+    <string name="camera_tip">轻触拍照，长按录像</string>
+    <string name="message_send_location">位置</string>
+    <!-- end 聊天界面 -->
+    <!-- start 动态模块 -->
+    <string name="dynamic_mic_string">动态</string>
+    <string name="people_nearby_string">附近好友</string>
+    <!-- end 动态模块 -->
+    <string name="grop_friend_tv_string">群聊</string>
+    <string name="dynamic_bt_string">动态</string>
+    <string name="map_bt_string">地图</string>
+    <string name="setting_btn_string">设置</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- start 地图 -->
+    <string name="display_title_string">我的历史足迹</string>
+    <string name="no_display_string">暂时没有轨迹哦</string>
+    <string name="menu_general_map_string">普通地图</string>
+    <string name="menu_satellite_map_string">卫星地图</string>
+    <string name="menu_normal_mode_string">普通模式</string>
+    <string name="menu_follow_mode_string">跟随模式</string>
+    <string name="menu_compass_mode_string">罗盘模式</string>
+    <string name="menu_real_time_traffic_off_string">实时交通</string>
+    <string name="menu_real_time_traffic_on_string">关闭实时交通</string>
+    <string name="menu_trajectory_off_string">开启轨迹记录</string>
+    <string name="menu_trajectory_on_string">关闭轨迹记录</string>
+    <string name="menu_clean_off_string">清理</string>
+    <string name="menu_my_address_string">我的位置</string>
+    <!-- end 地图 -->
+</resources>

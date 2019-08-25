@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 标题 -->
+
+    <include layout="@layout/fragment_title_layout" />
+
+    <LinearLayout
+        android:id="@+id/id_mes_info_top"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:orientation="horizontal">
+
+        <!-- 上部分 -->
+
+        <ListView
+            android:id="@+id/id_mes_info_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#00000000"
+            android:stackFromBottom="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_mes_info_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!-- 聊天框显示 -->
+
+        <include layout="@layout/fragment_message_bottom" />
+    </LinearLayout>
+
+</LinearLayout>

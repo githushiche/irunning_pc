@@ -1,0 +1,75 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.example.hsc.irunning"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        multiDexEnabled true
+
+        javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
+
+        ndk {
+            abiFilters "armeabi", "x86", "x86_64", "mips64", "mips"
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDir 'libs'
+        }
+    }
+}
+
+dependencies {
+    // 注解实现
+   // classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:26.0.0-beta1'
+    implementation 'com.android.support:recyclerview-v7:26.0.0-beta1'
+    implementation 'com.android.support:cardview-v7:26.0.0-beta1'
+    implementation 'com.android.support:design:26.0.0-beta1'
+    implementation 'de.hdodenhof:circleimageview:2.1.0'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'cn.jzvd:jiaozivideoplayer:6.0.0'
+
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:0.5'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:2.2.2'
+
+    // 导入项目依赖包
+    implementation 'org.litepal.android:java:3.0.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.12.0'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'org.java-websocket:Java-WebSocket:1.4.0'
+
+    // 导入百度jar包
+    implementation files('libs/BaiduLBS_Android.jar')
+    implementation files('libs/BaiduTraceSDK_v3_0_8.jar')
+    implementation files('libs/bos-android-sdk-1.0.3.jar')
+    implementation files('libs/EventBus.jar')
+    implementation files('libs/galaxy_lite.jar')
+    implementation files('libs/httpmime-4.1.2.jar')
+    implementation files('libs/intellij_annotations.jar')
+    implementation files('libs/javapoet-1.9.0.jar')
+    implementation files('libs/org.apache.http.legacy.jar')
+
+    // 导入百度导航和语言aar
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation project(':onsdk_all')
+    implementation project(':NaviTts')
+
+}

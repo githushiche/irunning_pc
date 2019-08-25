@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="@color/interval_color" />
+
+    <!-- 输入框 -->
+
+    <LinearLayout
+        android:id="@+id/layout_input"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:background="@color/white_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_input_type"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/d_haha" />
+
+        <EditText
+            android:id="@+id/et_chat_message"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/et_back_ground"
+            android:textCursorDrawable="@color/app_blue_color" />
+
+        <TextView
+            android:id="@+id/id_mes_info_send"
+            android:layout_width="45dp"
+            android:layout_height="30dp"
+            android:background="@color/app_blue_color"
+            android:gravity="center"
+            android:text="@string/message_send_btn"
+            android:textColor="@color/white_color" />
+
+        <ImageView
+            android:id="@+id/id_mes_info_more"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/more"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</LinearLayout>

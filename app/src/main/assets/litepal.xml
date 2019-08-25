@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<litepal>
+    <dbname value="irunning_information_db"></dbname>
+    <version value="1"></version>
+
+    <list>
+        <!-- 配置帮助类 -->
+        <mapping class="com.example.hsc.irunning.main.bean.User"></mapping>
+        <mapping class="com.example.hsc.irunning.main.bean.UserInfo"></mapping>
+        <mapping class="com.example.hsc.irunning.main.bean.Walk"></mapping>
+    </list>
+</litepal>

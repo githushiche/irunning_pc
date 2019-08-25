@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/commen_dialog_bg">
+
+    <TextView
+        android:id="@+id/id_setting_bottom_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="dddddddddd" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@+id/id_setting_bottom_content" />
+
+    <TextView
+        android:id="@+id/id_setting_bottom_confirmBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minHeight="50dp"
+        android:textColor="#3478f6"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/id_setting_bottom_cancelBtn"
+        app:layout_constraintTop_toBottomOf="@+id/line"
+        tools:text="确定" />
+
+    <TextView
+        android:id="@+id/id_setting_bottom_cancelBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minHeight="50dp"
+        android:textColor="#3478f6"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toRightOf="@+id/id_setting_bottom_confirmBtn"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line"
+        tools:text="取消" />
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="0dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="@+id/id_setting_bottom_confirmBtn"
+        app:layout_constraintLeft_toRightOf="@+id/id_setting_bottom_confirmBtn"
+        app:layout_constraintTop_toTopOf="@+id/id_setting_bottom_confirmBtn" />
+</android.support.constraint.ConstraintLayout>
